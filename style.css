@@ -14,6 +14,28 @@
 }
 
 body{
-    background-color: var(--body-background);
+    height: 100vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+
+    background-color: hsl(185, 75%, 39%);
+
+    background-image: 
+    url('images/bg-pattern-bottom.svg'),
+    url('images/bg-pattern-top.svg')
+    ;
+    background-size: 30em, 30em;
+    background-repeat: no-repeat;
+    background-position: right -10% bottom -70%, left -10% top -70%;
 }
 
+
+
+@media screen and (max-width: 875px) {
+    body{
+        background-position: right -20em bottom -30vh, left -20em top -30vh;
+        /* background-position: right -20em bottom -20vh, left -20em top -20vh; */
+
+    }
+}
