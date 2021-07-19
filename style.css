@@ -3,6 +3,8 @@
     --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --Dark-grayish-blue: hsl(227, 10%, 46%);
     --Dark-gray: hsl(0, 0%, 59%);
+
+    --border-radius: 20px;
 }
 
 /* Font size (name and stats): 18px */
@@ -30,21 +32,46 @@ body{
     background-position: right -10% bottom -70%, left -10% top -70%;
 }
 
+#card-wrapper{
+    width: 22em;
+    height: auto;
+    /* border-radius: 50%; */
+}
+
 #card-design{
     background-image: url('images/bg-pattern-card.svg');
-    width: 20em;
-    height: auto;
+    height: 9em;
+
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    
 }
 
 #card-white{
     background-color: white;
     text-align: center;
+
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
 }
 
 img{
     justify-self: center;
-    width: 6em;
+    height: 6em;
     border-radius: 50%;
+    border: white 0.4em solid;
+
+    margin-top: -3.4em;
+    margin-bottom: 1.2em;
+}
+
+#profile-name{
+    font-size: 1.2em;    
+}
+
+#profile-name p{
+    display: inline;
+    color: var(--Dark-grayish-blue);
 }
 
 ul{
