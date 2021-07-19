@@ -30,6 +30,29 @@ body{
     background-position: right -10% bottom -70%, left -10% top -70%;
 }
 
+#card-design{
+    background-image: url('images/bg-pattern-card.svg');
+    width: 20em;
+    height: auto;
+}
+
+#card-white{
+    background-color: white;
+    text-align: center;
+}
+
+img{
+    justify-self: center;
+    width: 6em;
+    border-radius: 50%;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 
 @media screen and (max-width: 875px) {
