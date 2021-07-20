@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -33,9 +34,8 @@ body{
 }
 
 #card-wrapper{
-    width: 22em;
+    max-width: 22em;
     height: auto;
-    /* border-radius: 50%; */
 }
 
 #card-design{
@@ -57,28 +57,63 @@ body{
 
 img{
     justify-self: center;
-    height: 6em;
+    height: 7em;
     border-radius: 50%;
     border: white 0.4em solid;
 
     margin-top: -3.4em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
 }
 
 #profile-name{
-    font-size: 1.2em;    
+    font-size: 1.2em;  
+    color: var(--Very-dark-desaturated-blue);  
+    letter-spacing: 0.5px;
+    margin: 0.6em;
+}
+
+p{
+    color: var(--Dark-grayish-blue);
+}
+
+#profile-header{
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--Dark-gray);
 }
 
 #profile-name p{
     display: inline;
-    color: var(--Dark-grayish-blue);
+}
+
+#profile-footer{
+    padding: 1.5em;
 }
 
 ul{
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* margin-left: 1em;
+    margin-right: 1em; */
 }
+
+li{
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    color: var(--Dark-gray);
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
+}
+
+li strong{
+    display: block;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1.7em;
+    letter-spacing: 0;
+    padding: 0.4em;
+}
+
+
 
 
 
