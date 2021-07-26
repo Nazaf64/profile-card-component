@@ -3,7 +3,6 @@
     --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --Dark-grayish-blue: hsl(227, 10%, 46%);
     --Dark-gray: hsl(0, 0%, 59%);
-
     --border-radius: 20px;
 }
 
@@ -18,7 +17,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
     display: -ms-grid;
     display: grid;
@@ -28,11 +27,11 @@ body{
 
     background-image: 
     url('images/bg-pattern-bottom.svg'),
-    url('images/bg-pattern-top.svg')
-    ;
-    background-size: 30em, 30em;
+    url('images/bg-pattern-top.svg');
+    
+    background-size: 80%, 80%;
     background-repeat: no-repeat;
-    background-position: right -10% bottom -70%, left -10% top -70%;
+    background-position: right -30vw bottom -50vw, left -30vw top -50vw;
 }
 
 #card-wrapper{
@@ -123,11 +122,10 @@ li strong{
 }
 
 
-
-
-
-@media screen and (max-width: 875px) {
+@media screen and (max-aspect-ratio: 1 / 1) {
     body{
-        background-position: right -20em bottom -30vh, left -20em top -30vh;
+        background-size: 90vw, 90vw;
+        background-position: right -40vw bottom -40vw, left -40vw top -40vw;
+
     }
 }
